@@ -1,0 +1,491 @@
+****************************************
+Report : design
+Design : FIR_core
+Version: P-2019.03-SP2
+Date   : Thu Dec 21 23:44:51 2023
+****************************************
+
+Design Attribute                         Value
+---------------------------------------------------------------------------
+Operating Conditions:
+  analysis_type                          on_chip_variation
+  operating_condition_min_name           tt_1p2v_25c
+  process_min                            1
+  temperature_min                        25
+  voltage_min                            1.2
+  tree_type_min                          balanced_case
+
+  operating_condition_max_name           tt_1p2v_25c
+  process_max                            1
+  temperature_max                        25
+  voltage_max                            1.2
+  tree_type_max                          balanced_case
+
+Wire Load:                               (use report_wire_load for more information)
+  wire_load_mode                         top
+  wire_load_model_max                    --
+  wire_load_model_min                    --
+  wire_load_selection_group_max          --
+  wire_load_selection_group_min          --
+  wire_load_min_block_size               0
+
+Design Rules:
+  max_capacitance                        --
+  min_capacitance                        --
+  max_fanout                             --
+  max_transition                         --
+  static_integrity                       --
+  dynamic_integrity                      --
+  max_area                               --
+
+Timing Ranges:
+  early_factor                           --
+  late_factor                            --
+
+Pin Input Delays:
+None specified.
+
+Pin Output Delays:
+None specified.
+Fast Analysis:                           disabled
+
+1
+****************************************
+Report : reference
+Design : FIR_core
+Version: P-2019.03-SP2
+Date   : Thu Dec 21 23:44:51 2023
+****************************************
+
+
+Attributes:
+    b - black-box (unknown)
+    h - hierarchical
+    n - noncombinational
+    u - contains unmapped logic
+    A - abstracted timing model
+    E - extracted timing model
+    S - Stamp timing model
+    Q - Quick timing model (QTM)
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+--------------------------------------------------------------------------------
+*memory                             0.00     1           0.00      h
+AND3X1TS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    8.64     8          69.12      
+AND4X1TS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   10.08     1          10.08      
+AO21XLTS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    8.64     59        509.76      
+AO22XLTS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   10.08     1073     10815.84     
+AOI211XLTS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    8.64     27        233.28      
+AOI21X1TS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    7.20     34        244.80      
+AOI221XLTS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   11.52     5          57.60      
+AOI222XLTS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   12.96     27        349.92      
+AOI22X1TS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    8.64     2721     23509.44     
+AOI2BB1XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    8.64     2          17.28      
+AOI2BB2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   10.08     236      2378.88      
+AOI31XLTS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    8.64     4          34.56      
+AOI32X1TS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   10.08     1271     12811.68     
+AOI33XLTS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   12.96     1          12.96      
+CLKAND2X2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    7.20     5          36.00      
+CLKBUFX2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    5.76     4314     24848.64     
+CMPR32X2TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   31.68     46       1457.28      
+CMPR42X1TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   57.60     51       2937.60      
+DFFQX1TS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   24.48     1262     30893.76     n
+DFFRXLTS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   33.12     2147     71108.64     n
+DFFSX1TS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   30.24     2          60.48      n
+DFFXLTS            scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   25.92     65       1684.80      n
+EDFFX1TS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   34.56     32       1105.92      n
+INVX2TS            scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    4.32     1695     7322.40      
+MX2X1TS            scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   12.96     1          12.96      
+NAND2BXLTS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    7.20     4          28.80      
+NAND2X1TS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    5.76     1383     7966.08      
+NAND3XLTS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    7.20     20        144.00      
+NAND4XLTS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    8.64     434      3749.76      
+NOR2BX1TS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    7.20     8          57.60      
+NOR2XLTS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    5.76     161       927.36      
+NOR3BXLTS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    8.64     3          25.92      
+NOR3XLTS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    7.20     14        100.80      
+NOR4XLTS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    8.64     102       881.28      
+OA21XLTS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    8.64     4          34.56      
+OA22X1TS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   10.08     3          30.24      
+OAI211XLTS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    8.64     10         86.40      
+OAI21XLTS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    7.20     802      5774.40      
+OAI22X1TS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    8.64     98        846.72      
+OAI2BB1X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    8.64     5          43.20      
+OAI2BB2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   10.08     25        252.00      
+OAI31X1TS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    8.64     4          34.56      
+OAI32X1TS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   10.08     26        262.08      
+OAI33XLTS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   11.52     3          34.56      
+OR2X1TS            scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    7.20     14        100.80      
+OR3X1TS            scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                    8.64     15        129.60      
+OR4X2TS            scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   10.08     2          20.16      
+TLATNXLTS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   17.28     16        276.48      n
+TLATXLTS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   15.84     3          47.52      n
+XNOR2X1TS          scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   11.52     1          11.52      
+XOR2XLTS           scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                   11.52     5          57.60      
+--------------------------------------------------------------------------------
+Total 52 references                                   214447.67
+1
+****************************************
+Report : constraint
+Design : FIR_core
+Version: P-2019.03-SP2
+Date   : Thu Dec 21 23:44:52 2023
+****************************************
+
+                                                   Weighted
+    Group (max_delay/setup)      Cost     Weight     Cost
+    -----------------------------------------------------
+    clk1                         0.00      1.00      0.00
+    clk2                         0.00      1.00      0.00
+    -----------------------------------------------------
+    max_delay/setup                                  0.00
+
+                                                   Weighted
+    Group (min_delay/hold)       Cost     Weight     Cost
+    -----------------------------------------------------
+    clk1                         0.00      1.00      0.00
+    clk2                         0.00      1.00      0.00
+    -----------------------------------------------------
+    min_delay/hold                                   0.00
+
+    Constraint                                       Cost
+    -----------------------------------------------------
+    max_delay/setup                                  0.00  (MET)
+    min_delay/hold                                   0.00  (MET)
+    recovery                                         0.00  (MET)
+    removal                                          0.00  (MET)
+    sequential_clock_pulse_width                     0.00  (MET)
+    sequential_clock_min_period                      0.00  (MET)
+    max_capacitance                                  0.00  (MET)
+    max_transition                                   0.00  (MET)
+
+1
+****************************************
+Report : constraint
+	-all_violators
+	-path slack_only
+Design : FIR_core
+Version: P-2019.03-SP2
+Date   : Thu Dec 21 23:44:52 2023
+****************************************
+
+
+
+
+
+
+1
+****************************************
+Report : timing
+	-path_type full
+	-delay_type min_max
+	-max_paths 1
+	-sort_by slack
+Design : FIR_core
+Version: P-2019.03-SP2
+Date   : Thu Dec 21 23:44:52 2023
+****************************************
+
+
+  Startpoint: din[11] (input port clocked by clk2)
+  Endpoint: async_fifo_I3_DualRAM_mem_reg_11__11_
+               (rising edge-triggered flip-flop clocked by clk1)
+  Path Group: clk1
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk2 (rise edge)                                0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  input external delay                                  0.0500     0.0500 f
+  din[11] (in)                                          0.0200     0.0700 f
+  U17129/Y (OAI32X1TS)                                  0.1639     0.2340 r
+  U6999/Y (INVX2TS)                                     0.1542     0.3882 f
+  U7002/Y (INVX2TS)                                     0.1003     0.4885 r
+  U17141/Y (AOI2BB2XLTS)                                0.1019     0.5904 f
+  async_fifo_I3_DualRAM_mem_reg_11__11_/D (DFFQX1TS)    0.0000     0.5904 f
+  data arrival time                                                0.5904
+
+  clock clk1 (rise edge)                                0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  clock reconvergence pessimism                         0.0000     0.0000
+  async_fifo_I3_DualRAM_mem_reg_11__11_/CK (DFFQX1TS)              0.0000 r
+  library hold time                                    -0.0243    -0.0243
+  data required time                                              -0.0243
+  ------------------------------------------------------------------------------
+  data required time                                              -0.0243
+  data arrival time                                               -0.5904
+  ------------------------------------------------------------------------------
+  slack (MET)                                                      0.6147
+
+
+
+  Startpoint: b_local_reg_2_
+               (rising edge-triggered flip-flop clocked by clk2)
+  Endpoint: adder_multipe_ALU_out_t_reg_31_
+               (rising edge-triggered flip-flop clocked by clk2)
+  Path Group: clk2
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk2 (rise edge)                                0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  b_local_reg_2_/CK (DFFRXLTS)                          0.0000     0.0000 r
+  b_local_reg_2_/QN (DFFRXLTS)                          0.9919     0.9919 r
+  U6790/Y (INVX2TS)                                     0.1983     1.1902 f
+  U14432/Y (OAI22X1TS)                                  0.2017     1.3919 r
+  U14433/Y (AOI21X1TS)                                  0.1300     1.5220 f
+  U14434/Y (NOR2XLTS)                                   0.3227     1.8446 r
+  U14670/Y (AOI21X1TS)                                  0.2023     2.0469 f
+  U14675/S (CMPR32X2TS)                                 0.7004     2.7473 f
+  intadd_0_U29/CO (CMPR32X2TS)                          0.6814     3.4286 f
+  intadd_0_U28/CO (CMPR32X2TS)                          0.4733     3.9019 f
+  intadd_0_U27/CO (CMPR32X2TS)                          0.4732     4.3751 f
+  intadd_0_U26/CO (CMPR32X2TS)                          0.4732     4.8484 f
+  intadd_0_U25/CO (CMPR32X2TS)                          0.4732     5.3216 f
+  intadd_0_U24/CO (CMPR32X2TS)                          0.4732     5.7948 f
+  intadd_0_U23/CO (CMPR32X2TS)                          0.4732     6.2681 f
+  intadd_0_U22/CO (CMPR32X2TS)                          0.4732     6.7413 f
+  intadd_0_U21/CO (CMPR32X2TS)                          0.4732     7.2145 f
+  intadd_0_U20/CO (CMPR32X2TS)                          0.4732     7.6878 f
+  intadd_0_U19/CO (CMPR32X2TS)                          0.4732     8.1610 f
+  intadd_0_U18/CO (CMPR32X2TS)                          0.4732     8.6343 f
+  intadd_0_U17/CO (CMPR32X2TS)                          0.4732     9.1075 f
+  intadd_0_U16/CO (CMPR32X2TS)                          0.4732     9.5807 f
+  intadd_0_U15/CO (CMPR32X2TS)                          0.4732    10.0540 f
+  intadd_0_U14/CO (CMPR32X2TS)                          0.4732    10.5272 f
+  intadd_0_U13/CO (CMPR32X2TS)                          0.4732    11.0004 f
+  intadd_0_U12/CO (CMPR32X2TS)                          0.4732    11.4737 f
+  intadd_0_U11/CO (CMPR32X2TS)                          0.4732    11.9469 f
+  intadd_0_U10/CO (CMPR32X2TS)                          0.4732    12.4202 f
+  intadd_0_U9/CO (CMPR32X2TS)                           0.4732    12.8934 f
+  intadd_0_U8/CO (CMPR32X2TS)                           0.4732    13.3666 f
+  intadd_0_U7/CO (CMPR32X2TS)                           0.4732    13.8399 f
+  intadd_0_U6/CO (CMPR32X2TS)                           0.4732    14.3131 f
+  intadd_0_U5/CO (CMPR32X2TS)                           0.4732    14.7864 f
+  intadd_0_U4/CO (CMPR32X2TS)                           0.4732    15.2596 f
+  intadd_0_U3/CO (CMPR32X2TS)                           0.4732    15.7328 f
+  intadd_0_U2/CO (CMPR32X2TS)                           0.4564    16.1892 f
+  U14834/Y (XOR2XLTS)                                   0.2101    16.3994 f
+  adder_multipe_ALU_out_t_reg_31_/D (EDFFX1TS)          0.0000    16.3994 f
+  data arrival time                                               16.3994
+
+  clock clk2 (rise edge)                              1000.0000  1000.0000
+  clock network delay (ideal)                           0.0000   1000.0000
+  clock reconvergence pessimism                         0.0000   1000.0000
+  adder_multipe_ALU_out_t_reg_31_/CK (EDFFX1TS)                  1000.0000 r
+  library setup time                                   -0.7751   999.2249
+  data required time                                             999.2249
+  ------------------------------------------------------------------------------
+  data required time                                             999.2249
+  data arrival time                                              -16.3994
+  ------------------------------------------------------------------------------
+  slack (MET)                                                    982.8255
+
+
+1
+****************************************
+Report : Switching Activity
+	
+Design : FIR_core
+Version: P-2019.03-SP2
+Date   : Thu Dec 21 23:44:53 2023
+****************************************
+
+ Switching Activity Overview Statistics for "FIR_core"
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                  From Activity     From         From         From             From            From                                                            Not
+Object Type       File (%)          SSA (%)      SSA Force (%) SSA Force (%)   SCA (%)         Clock (%)       Default (%)     Propagated(%)   Implied(%)      Annotated(%)  Total
+                                                 Annotated    Implied                                                                                                        
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Nets             19859(100.00%)    0(0.00%)     0(0.00%)     0(0.00%)         0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)      19859
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Nets Driven by
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Primary Input     45(100.00%)       0(0.00%)     0(0.00%)     0(0.00%)         0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)      45
+Tri-State         0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+Black Box         0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+Sequential        4916(100.00%)     0(0.00%)     0(0.00%)     0(0.00%)         0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)      4916
+Combinational     14898(100.00%)    0(0.00%)     0(0.00%)     0(0.00%)         0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)      14898
+Memory            0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+Clock Gate        0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Static Probability Overview Statistics for "FIR_core"
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                  From Activity     From         From         From             From            From                                                            Not
+Object Type       File (%)          SSA (%)      SSA Force (%) SSA Force (%)   SCA (%)         Clock (%)       Default (%)     Propagated(%)   Implied(%)      Annotated(%)  Total
+                                                 Annotated    Implied                                                                                                        
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Nets             19859(100.00%)    0(0.00%)     0(0.00%)     0(0.00%)         0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)      19859
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Nets Driven by
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Primary Input     45(100.00%)       0(0.00%)     0(0.00%)     0(0.00%)         0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)      45
+Tri-State         0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+Black Box         0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+Sequential        4916(100.00%)     0(0.00%)     0(0.00%)     0(0.00%)         0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)      4916
+Combinational     14898(100.00%)    0(0.00%)     0(0.00%)     0(0.00%)         0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)      14898
+Memory            0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+Clock Gate        0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1
+****************************************
+Report : Switching Activity
+	-list_not_annotated
+Design : FIR_core
+Version: P-2019.03-SP2
+Date   : Thu Dec 21 23:44:53 2023
+****************************************
+
+ Switching Activity Overview Statistics for "FIR_core"
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                  From Activity     From         From         From             From            From                                                            Not
+Object Type       File (%)          SSA (%)      SSA Force (%) SSA Force (%)   SCA (%)         Clock (%)       Default (%)     Propagated(%)   Implied(%)      Annotated(%)  Total
+                                                 Annotated    Implied                                                                                                        
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Nets             19859(100.00%)    0(0.00%)     0(0.00%)     0(0.00%)         0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)      19859
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Nets Driven by
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Primary Input     45(100.00%)       0(0.00%)     0(0.00%)     0(0.00%)         0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)      45
+Tri-State         0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+Black Box         0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+Sequential        4916(100.00%)     0(0.00%)     0(0.00%)     0(0.00%)         0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)      4916
+Combinational     14898(100.00%)    0(0.00%)     0(0.00%)     0(0.00%)         0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)      14898
+Memory            0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+Clock Gate        0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Static Probability Overview Statistics for "FIR_core"
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                  From Activity     From         From         From             From            From                                                            Not
+Object Type       File (%)          SSA (%)      SSA Force (%) SSA Force (%)   SCA (%)         Clock (%)       Default (%)     Propagated(%)   Implied(%)      Annotated(%)  Total
+                                                 Annotated    Implied                                                                                                        
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Nets             19859(100.00%)    0(0.00%)     0(0.00%)     0(0.00%)         0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)      19859
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Nets Driven by
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Primary Input     45(100.00%)       0(0.00%)     0(0.00%)     0(0.00%)         0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)      45
+Tri-State         0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+Black Box         0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+Sequential        4916(100.00%)     0(0.00%)     0(0.00%)     0(0.00%)         0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)      4916
+Combinational     14898(100.00%)    0(0.00%)     0(0.00%)     0(0.00%)         0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)        0(0.00%)      14898
+Memory            0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+Clock Gate        0(0%)             0(0%)        0(0%)        0(0%)            0(0%)           0(0%)           0(0%)           0(0%)           0(0%)           0(0%)         0
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+List of nonannotated nets :
+1
+****************************************
+Report : Time Based Power
+Design : FIR_core
+Version: P-2019.03-SP2
+Date   : Thu Dec 21 23:45:07 2023
+****************************************
+
+
+
+  Attributes
+  ----------
+      i  -  Including register clock pin internal power
+      u  -  User defined power group
+
+                        Internal  Switching  Leakage    Total
+Power Group             Power     Power      Power      Power   (     %)  Attrs
+--------------------------------------------------------------------------------
+clock_network           4.995e-05    0.0000    0.0000 4.995e-05 (99.55%)  i
+register                3.711e-09    0.0000 1.201e-07 1.238e-07 ( 0.25%)  
+combinational           1.224e-08    0.0000 9.051e-08 1.028e-07 ( 0.20%)  
+sequential                 0.0000    0.0000 4.643e-10 4.643e-10 ( 0.00%)  
+memory                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+io_pad                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+black_box                  0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+
+  Net Switching Power  =    0.0000   ( 0.00%)
+  Cell Internal Power  = 4.996e-05   (99.58%)
+  Cell Leakage Power   = 2.111e-07   ( 0.42%)
+                         ---------
+Total Power            = 5.017e-05  (100.00%)
+
+X Transition Power     =    0.0000
+Glitching Power        =    0.0000
+
+Peak Power             =    0.3235
+Peak Time              = 100000.000
+
+1
+****************************************
+Report : Time Based Power
+	-hierarchy
+Design : FIR_core
+Version: P-2019.03-SP2
+Date   : Thu Dec 21 23:45:07 2023
+****************************************
+
+
+
+                                      Int      Switch   Leak      Total
+Hierarchy                             Power    Power    Power     Power    %
+--------------------------------------------------------------------------------
+FIR_core                              5.00e-05    0.000 2.11e-07  5.02e-05 100.0
+
+
+                                      Peak     Peak            Glitch   X-tran
+Hierarchy                             Power    Time            Power    Power
+--------------------------------------------------------------------------------
+FIR_core                                 0.324 100000.000-100000.001
+                                                                  0.000    0.000
+1
