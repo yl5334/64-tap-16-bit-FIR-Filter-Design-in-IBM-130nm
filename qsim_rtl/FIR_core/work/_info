@@ -1,0 +1,275 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/user/stud/fall23/yl5334/FIR_filter/qsim_rtl/FIR_core
+T_opt
+!s110 1703220026
+V=Yzeo;K5ozEB>IbPMoE;B1
+04 9 4 work testbench fast 0
+=1-b04f130e1319-65851339-d73f0-37a8
+o-quiet -auto_acc_if_foreign -work work
+Z1 tCvgOpt 0
+n@_opt
+OE;O;10.7b_1;67
+vALU
+Z2 !s110 1703220024
+!i10b 1
+!s100 2F73XcOoXQWSQ>c0<@E4z1
+IOA<ZozG_iX8o_S5Ii[ZCU0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1703217066
+Z5 8../../rtl/FIR_core/FIR_core.v
+Z6 F../../rtl/FIR_core/FIR_core.v
+L0 297
+Z7 OE;L;10.7b_1;67
+r1
+!s85 0
+31
+Z8 !s108 1703220024.000000
+Z9 !s107 ../../rtl/FIR_core/FIR_core.v|
+Z10 !s90 -reportprogress|300|+acc|-incr|../../rtl/FIR_core/FIR_core.v|
+!i113 0
+Z11 o+acc -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+n@a@l@u
+vAsyncFIFO
+R2
+!i10b 1
+!s100 DhAoc73Elf6W8=HO0eS1Y0
+IX`h[d;ohFF>0QUELkWVB@2
+R3
+R0
+Z12 w1703214273
+Z13 8../../rtl/FIR_core/AsyncFIFO.v
+Z14 F../../rtl/FIR_core/AsyncFIFO.v
+L0 1
+R7
+r1
+!s85 0
+31
+R8
+Z15 !s107 ../../rtl/FIR_core/AsyncFIFO.v|
+Z16 !s90 -reportprogress|300|+acc|-incr|../../rtl/FIR_core/AsyncFIFO.v|
+!i113 0
+R11
+R1
+n@async@f@i@f@o
+vDualRAM
+R2
+!i10b 1
+!s100 P9:h^j2<XMHP?g_3;IKWa2
+IQ941WCgIdVomJMaFcQiCA2
+R3
+R0
+R12
+R13
+R14
+L0 133
+R7
+r1
+!s85 0
+31
+R8
+R15
+R16
+!i113 0
+R11
+R1
+n@dual@r@a@m
+vFIR_core
+R2
+!i10b 1
+!s100 A9U>:m3zLGiS7AbGaa8:22
+I_oe3fW6^j02Lj@cUPd0z90
+R3
+R0
+R4
+R5
+R6
+L0 23
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R1
+n@f@i@r_core
+vfix2float
+R2
+!i10b 1
+!s100 gKaR4M8GY1T^:[aGVSJ791
+I>EU2AEcjge80KY?g9MYL<0
+R3
+R0
+R4
+R5
+R6
+L0 323
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R1
+vmemory
+Z17 !s110 1703220025
+!i10b 1
+!s100 ^ni[46nEdR68Z<zZLOz9]1
+I2Q`oCV2X>MABU>KLe@Z<b1
+R3
+R0
+w1701638805
+8../../mem_comp/rf1shd/bin/memory.v
+F../../mem_comp/rf1shd/bin/memory.v
+L0 53
+R7
+r1
+!s85 0
+31
+Z18 !s108 1703220025.000000
+!s107 ../../mem_comp/rf1shd/bin/memory.v|
+!s90 -reportprogress|300|+acc|-incr|../../mem_comp/rf1shd/bin/memory.v|
+!i113 0
+R11
+R1
+vrptr_empty
+R17
+!i10b 1
+!s100 b6bnO89@e9ZWE6_Gi0:KW2
+INF]H8@3KD4CEO2QU1EaEV0
+R3
+R0
+R12
+R13
+R14
+L0 163
+R7
+r1
+!s85 0
+31
+R8
+R15
+R16
+!i113 0
+R11
+R1
+vsram
+R17
+!i10b 1
+!s100 `FZ2F0NYK8H^Y;PfD2[b23
+IRV73PPGh?>ILR3G3OdY;Z3
+R3
+R0
+w1701647782
+8../../mem_comp/rf1shd/bin/sram.v
+F../../mem_comp/rf1shd/bin/sram.v
+L0 1
+R7
+r1
+!s85 0
+31
+R18
+!s107 ../../mem_comp/rf1shd/bin/sram.v|
+!s90 -reportprogress|300|+acc|-incr|../../mem_comp/rf1shd/bin/sram.v|
+!i113 0
+R11
+R1
+vsync_r2w
+R2
+!i10b 1
+!s100 oO?7>ldSJC4W?U;;_WU3k2
+IKdjbdn_Rh6VIhb`46aW7a0
+R3
+R0
+R12
+R13
+R14
+L0 88
+R7
+r1
+!s85 0
+31
+R8
+R15
+R16
+!i113 0
+R11
+R1
+vsync_w2r
+R2
+!i10b 1
+!s100 ZUT?]XljT=Z@]P8Cko5=_1
+IF_L@j2VM0CR_Rnoj>W:Hm2
+R3
+R0
+R12
+R13
+R14
+L0 111
+R7
+r1
+!s85 0
+31
+R8
+R15
+R16
+!i113 0
+R11
+R1
+vtestbench
+R17
+!i10b 1
+!s100 6ZQm>O1=aQ7ESRT:KhhSP0
+IO7GYNhQj8_6obC>kM1eZZ0
+R3
+R0
+w1703214007
+8testbench.v
+Ftestbench.v
+L0 18
+R7
+r1
+!s85 0
+31
+R18
+!s107 testbench.v|
+!s90 -reportprogress|300|+acc|-incr|testbench.v|
+!i113 0
+R11
+R1
+vwptr_full
+R17
+!i10b 1
+!s100 T6Reg8VaQkKbnmeZ][5^>2
+I9Z@2=TQFDP1jGZNo@OE?c1
+R3
+R0
+R12
+R13
+R14
+L0 210
+R7
+r1
+!s85 0
+31
+R8
+R15
+R16
+!i113 0
+R11
+R1
