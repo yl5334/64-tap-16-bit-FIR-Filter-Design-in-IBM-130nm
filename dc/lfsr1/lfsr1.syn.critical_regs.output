@@ -1,0 +1,35 @@
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+        -max_paths 10000
+        -sort_by slack
+Design : lfsr1
+Version: O-2018.06-SP5-1
+Date   : Fri Oct 20 15:32:31 2023
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+lfsr_out[12] (out)                  0.74 f            1.95         1.21
+lfsr_out[5] (out)                   0.74 f            1.95         1.21
+lfsr_out[15] (out)                  0.73 f            1.95         1.22
+lfsr_out[14] (out)                  0.73 f            1.95         1.22
+lfsr_out[13] (out)                  0.73 f            1.95         1.22
+lfsr_out[11] (out)                  0.73 f            1.95         1.22
+lfsr_out[10] (out)                  0.73 f            1.95         1.22
+lfsr_out[9] (out)                   0.73 f            1.95         1.22
+lfsr_out[8] (out)                   0.73 f            1.95         1.22
+lfsr_out[7] (out)                   0.73 f            1.95         1.22
+lfsr_out[6] (out)                   0.73 f            1.95         1.22
+lfsr_out[4] (out)                   0.73 f            1.95         1.22
+lfsr_out[3] (out)                   0.73 f            1.95         1.22
+lfsr_out[2] (out)                   0.73 f            1.95         1.22
+lfsr_out[1] (out)                   0.73 f            1.95         1.22
+lfsr_out[0] (out)                   0.29 f            1.95         1.66
+
+1

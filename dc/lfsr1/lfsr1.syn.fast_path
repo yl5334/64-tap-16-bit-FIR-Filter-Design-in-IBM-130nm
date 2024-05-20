@@ -1,0 +1,896 @@
+ 
+****************************************
+Report : timing
+        -path short
+        -delay min
+        -max_paths 10000
+        -sort_by slack
+Design : lfsr1
+Version: O-2018.06-SP5-1
+Date   : Fri Oct 20 15:32:31 2023
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: lfsr_out_reg_0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: lfsr_out[0]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  lfsr_out_reg_0_/CK (DFFHQX4TS)           0.00       0.00 r
+  lfsr_out_reg_0_/Q (DFFHQX4TS)            0.27       0.27 r
+  lfsr_out[0] (out)                        0.00       0.27 r
+  data arrival time                                   0.27
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.05      -0.05
+  data required time                                 -0.05
+  -----------------------------------------------------------
+  data required time                                 -0.05
+  data arrival time                                  -0.27
+  -----------------------------------------------------------
+  slack (MET)                                         0.32
+
+
+  Startpoint: seed[0] (input port clocked by clk)
+  Endpoint: lfsr_out_reg_0_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.05       0.05 r
+  seed[0] (in)                             0.01       0.06 r
+  ...
+  lfsr_out_reg_0_/D (DFFHQX4TS)            0.26       0.33 r
+  data arrival time                                   0.33
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  lfsr_out_reg_0_/CK (DFFHQX4TS)           0.00       0.00 r
+  library hold time                       -0.05      -0.05
+  data required time                                 -0.05
+  -----------------------------------------------------------
+  data required time                                 -0.05
+  data arrival time                                  -0.33
+  -----------------------------------------------------------
+  slack (MET)                                         0.38
+
+
+  Startpoint: seed[1] (input port clocked by clk)
+  Endpoint: lfsr_out_reg_1_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.05       0.05 r
+  seed[1] (in)                             0.01       0.06 r
+  ...
+  lfsr_out_reg_1_/D (DFFQX1TS)             0.22       0.29 r
+  data arrival time                                   0.29
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  lfsr_out_reg_1_/CK (DFFQX1TS)            0.00       0.00 r
+  library hold time                       -0.10      -0.10
+  data required time                                 -0.10
+  -----------------------------------------------------------
+  data required time                                 -0.10
+  data arrival time                                  -0.29
+  -----------------------------------------------------------
+  slack (MET)                                         0.39
+
+
+  Startpoint: seed[2] (input port clocked by clk)
+  Endpoint: lfsr_out_reg_2_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.05       0.05 r
+  seed[2] (in)                             0.01       0.06 r
+  ...
+  lfsr_out_reg_2_/D (DFFQX1TS)             0.22       0.29 r
+  data arrival time                                   0.29
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  lfsr_out_reg_2_/CK (DFFQX1TS)            0.00       0.00 r
+  library hold time                       -0.10      -0.10
+  data required time                                 -0.10
+  -----------------------------------------------------------
+  data required time                                 -0.10
+  data arrival time                                  -0.29
+  -----------------------------------------------------------
+  slack (MET)                                         0.39
+
+
+  Startpoint: seed[3] (input port clocked by clk)
+  Endpoint: lfsr_out_reg_3_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.05       0.05 r
+  seed[3] (in)                             0.01       0.06 r
+  ...
+  lfsr_out_reg_3_/D (DFFQX1TS)             0.22       0.29 r
+  data arrival time                                   0.29
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  lfsr_out_reg_3_/CK (DFFQX1TS)            0.00       0.00 r
+  library hold time                       -0.10      -0.10
+  data required time                                 -0.10
+  -----------------------------------------------------------
+  data required time                                 -0.10
+  data arrival time                                  -0.29
+  -----------------------------------------------------------
+  slack (MET)                                         0.39
+
+
+  Startpoint: seed[6] (input port clocked by clk)
+  Endpoint: lfsr_out_reg_6_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.05       0.05 r
+  seed[6] (in)                             0.01       0.06 r
+  ...
+  lfsr_out_reg_6_/D (DFFQX1TS)             0.22       0.29 r
+  data arrival time                                   0.29
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  lfsr_out_reg_6_/CK (DFFQX1TS)            0.00       0.00 r
+  library hold time                       -0.10      -0.10
+  data required time                                 -0.10
+  -----------------------------------------------------------
+  data required time                                 -0.10
+  data arrival time                                  -0.29
+  -----------------------------------------------------------
+  slack (MET)                                         0.39
+
+
+  Startpoint: seed[8] (input port clocked by clk)
+  Endpoint: lfsr_out_reg_8_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.05       0.05 r
+  seed[8] (in)                             0.01       0.06 r
+  ...
+  lfsr_out_reg_8_/D (DFFQX1TS)             0.22       0.29 r
+  data arrival time                                   0.29
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  lfsr_out_reg_8_/CK (DFFQX1TS)            0.00       0.00 r
+  library hold time                       -0.10      -0.10
+  data required time                                 -0.10
+  -----------------------------------------------------------
+  data required time                                 -0.10
+  data arrival time                                  -0.29
+  -----------------------------------------------------------
+  slack (MET)                                         0.39
+
+
+  Startpoint: seed[9] (input port clocked by clk)
+  Endpoint: lfsr_out_reg_9_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.05       0.05 r
+  seed[9] (in)                             0.01       0.06 r
+  ...
+  lfsr_out_reg_9_/D (DFFQX1TS)             0.22       0.29 r
+  data arrival time                                   0.29
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  lfsr_out_reg_9_/CK (DFFQX1TS)            0.00       0.00 r
+  library hold time                       -0.10      -0.10
+  data required time                                 -0.10
+  -----------------------------------------------------------
+  data required time                                 -0.10
+  data arrival time                                  -0.29
+  -----------------------------------------------------------
+  slack (MET)                                         0.39
+
+
+  Startpoint: seed[11] (input port clocked by clk)
+  Endpoint: lfsr_out_reg_11_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.05       0.05 r
+  seed[11] (in)                            0.01       0.06 r
+  ...
+  lfsr_out_reg_11_/D (DFFQX1TS)            0.22       0.29 r
+  data arrival time                                   0.29
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  lfsr_out_reg_11_/CK (DFFQX1TS)           0.00       0.00 r
+  library hold time                       -0.10      -0.10
+  data required time                                 -0.10
+  -----------------------------------------------------------
+  data required time                                 -0.10
+  data arrival time                                  -0.29
+  -----------------------------------------------------------
+  slack (MET)                                         0.39
+
+
+  Startpoint: seed[14] (input port clocked by clk)
+  Endpoint: lfsr_out_reg_14_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.05       0.05 r
+  seed[14] (in)                            0.01       0.06 r
+  ...
+  lfsr_out_reg_14_/D (DFFQX1TS)            0.22       0.29 r
+  data arrival time                                   0.29
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  lfsr_out_reg_14_/CK (DFFQX1TS)           0.00       0.00 r
+  library hold time                       -0.10      -0.10
+  data required time                                 -0.10
+  -----------------------------------------------------------
+  data required time                                 -0.10
+  data arrival time                                  -0.29
+  -----------------------------------------------------------
+  slack (MET)                                         0.39
+
+
+  Startpoint: seed[15] (input port clocked by clk)
+  Endpoint: lfsr_out_reg_15_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.05       0.05 r
+  seed[15] (in)                            0.01       0.06 r
+  ...
+  lfsr_out_reg_15_/D (DFFQX1TS)            0.22       0.29 r
+  data arrival time                                   0.29
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  lfsr_out_reg_15_/CK (DFFQX1TS)           0.00       0.00 r
+  library hold time                       -0.10      -0.10
+  data required time                                 -0.10
+  -----------------------------------------------------------
+  data required time                                 -0.10
+  data arrival time                                  -0.29
+  -----------------------------------------------------------
+  slack (MET)                                         0.39
+
+
+  Startpoint: seed[12] (input port clocked by clk)
+  Endpoint: lfsr_out_reg_12_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.05       0.05 r
+  seed[12] (in)                            0.01       0.06 r
+  ...
+  lfsr_out_reg_12_/D (DFFQX1TS)            0.22       0.29 r
+  data arrival time                                   0.29
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  lfsr_out_reg_12_/CK (DFFQX1TS)           0.00       0.00 r
+  library hold time                       -0.10      -0.10
+  data required time                                 -0.10
+  -----------------------------------------------------------
+  data required time                                 -0.10
+  data arrival time                                  -0.29
+  -----------------------------------------------------------
+  slack (MET)                                         0.39
+
+
+  Startpoint: seed[5] (input port clocked by clk)
+  Endpoint: lfsr_out_reg_5_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.05       0.05 r
+  seed[5] (in)                             0.01       0.06 r
+  ...
+  lfsr_out_reg_5_/D (DFFQX1TS)             0.22       0.29 r
+  data arrival time                                   0.29
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  lfsr_out_reg_5_/CK (DFFQX1TS)            0.00       0.00 r
+  library hold time                       -0.10      -0.10
+  data required time                                 -0.10
+  -----------------------------------------------------------
+  data required time                                 -0.10
+  data arrival time                                  -0.29
+  -----------------------------------------------------------
+  slack (MET)                                         0.39
+
+
+  Startpoint: seed[4] (input port clocked by clk)
+  Endpoint: lfsr_out_reg_4_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.05       0.05 r
+  seed[4] (in)                             0.01       0.06 r
+  ...
+  lfsr_out_reg_4_/D (DFFQX1TS)             0.22       0.29 r
+  data arrival time                                   0.29
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  lfsr_out_reg_4_/CK (DFFQX1TS)            0.00       0.00 r
+  library hold time                       -0.10      -0.10
+  data required time                                 -0.10
+  -----------------------------------------------------------
+  data required time                                 -0.10
+  data arrival time                                  -0.29
+  -----------------------------------------------------------
+  slack (MET)                                         0.39
+
+
+  Startpoint: seed[7] (input port clocked by clk)
+  Endpoint: lfsr_out_reg_7_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.05       0.05 r
+  seed[7] (in)                             0.01       0.06 r
+  ...
+  lfsr_out_reg_7_/D (DFFQX1TS)             0.22       0.29 r
+  data arrival time                                   0.29
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  lfsr_out_reg_7_/CK (DFFQX1TS)            0.00       0.00 r
+  library hold time                       -0.10      -0.10
+  data required time                                 -0.10
+  -----------------------------------------------------------
+  data required time                                 -0.10
+  data arrival time                                  -0.29
+  -----------------------------------------------------------
+  slack (MET)                                         0.39
+
+
+  Startpoint: seed[10] (input port clocked by clk)
+  Endpoint: lfsr_out_reg_10_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.05       0.05 r
+  seed[10] (in)                            0.01       0.06 r
+  ...
+  lfsr_out_reg_10_/D (DFFQX1TS)            0.22       0.29 r
+  data arrival time                                   0.29
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  lfsr_out_reg_10_/CK (DFFQX1TS)           0.00       0.00 r
+  library hold time                       -0.10      -0.10
+  data required time                                 -0.10
+  -----------------------------------------------------------
+  data required time                                 -0.10
+  data arrival time                                  -0.29
+  -----------------------------------------------------------
+  slack (MET)                                         0.39
+
+
+  Startpoint: seed[13] (input port clocked by clk)
+  Endpoint: lfsr_out_reg_13_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.05       0.05 r
+  seed[13] (in)                            0.01       0.06 r
+  ...
+  lfsr_out_reg_13_/D (DFFQX1TS)            0.22       0.29 r
+  data arrival time                                   0.29
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  lfsr_out_reg_13_/CK (DFFQX1TS)           0.00       0.00 r
+  library hold time                       -0.10      -0.10
+  data required time                                 -0.10
+  -----------------------------------------------------------
+  data required time                                 -0.10
+  data arrival time                                  -0.29
+  -----------------------------------------------------------
+  slack (MET)                                         0.39
+
+
+  Startpoint: lfsr_out_reg_14_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: lfsr_out[14]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  lfsr_out_reg_14_/CK (DFFQX1TS)           0.00       0.00 r
+  lfsr_out_reg_14_/Q (DFFQX1TS)            0.63       0.63 r
+  lfsr_out[14] (out)                       0.00       0.63 r
+  data arrival time                                   0.63
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.05      -0.05
+  data required time                                 -0.05
+  -----------------------------------------------------------
+  data required time                                 -0.05
+  data arrival time                                  -0.63
+  -----------------------------------------------------------
+  slack (MET)                                         0.68
+
+
+  Startpoint: lfsr_out_reg_13_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: lfsr_out[13]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  lfsr_out_reg_13_/CK (DFFQX1TS)           0.00       0.00 r
+  lfsr_out_reg_13_/Q (DFFQX1TS)            0.63       0.63 r
+  lfsr_out[13] (out)                       0.00       0.63 r
+  data arrival time                                   0.63
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.05      -0.05
+  data required time                                 -0.05
+  -----------------------------------------------------------
+  data required time                                 -0.05
+  data arrival time                                  -0.63
+  -----------------------------------------------------------
+  slack (MET)                                         0.68
+
+
+  Startpoint: lfsr_out_reg_11_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: lfsr_out[11]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  lfsr_out_reg_11_/CK (DFFQX1TS)           0.00       0.00 r
+  lfsr_out_reg_11_/Q (DFFQX1TS)            0.63       0.63 r
+  lfsr_out[11] (out)                       0.00       0.63 r
+  data arrival time                                   0.63
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.05      -0.05
+  data required time                                 -0.05
+  -----------------------------------------------------------
+  data required time                                 -0.05
+  data arrival time                                  -0.63
+  -----------------------------------------------------------
+  slack (MET)                                         0.68
+
+
+  Startpoint: lfsr_out_reg_10_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: lfsr_out[10]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  lfsr_out_reg_10_/CK (DFFQX1TS)           0.00       0.00 r
+  lfsr_out_reg_10_/Q (DFFQX1TS)            0.63       0.63 r
+  lfsr_out[10] (out)                       0.00       0.63 r
+  data arrival time                                   0.63
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.05      -0.05
+  data required time                                 -0.05
+  -----------------------------------------------------------
+  data required time                                 -0.05
+  data arrival time                                  -0.63
+  -----------------------------------------------------------
+  slack (MET)                                         0.68
+
+
+  Startpoint: lfsr_out_reg_9_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: lfsr_out[9]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  lfsr_out_reg_9_/CK (DFFQX1TS)            0.00       0.00 r
+  lfsr_out_reg_9_/Q (DFFQX1TS)             0.63       0.63 r
+  lfsr_out[9] (out)                        0.00       0.63 r
+  data arrival time                                   0.63
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.05      -0.05
+  data required time                                 -0.05
+  -----------------------------------------------------------
+  data required time                                 -0.05
+  data arrival time                                  -0.63
+  -----------------------------------------------------------
+  slack (MET)                                         0.68
+
+
+  Startpoint: lfsr_out_reg_8_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: lfsr_out[8]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  lfsr_out_reg_8_/CK (DFFQX1TS)            0.00       0.00 r
+  lfsr_out_reg_8_/Q (DFFQX1TS)             0.63       0.63 r
+  lfsr_out[8] (out)                        0.00       0.63 r
+  data arrival time                                   0.63
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.05      -0.05
+  data required time                                 -0.05
+  -----------------------------------------------------------
+  data required time                                 -0.05
+  data arrival time                                  -0.63
+  -----------------------------------------------------------
+  slack (MET)                                         0.68
+
+
+  Startpoint: lfsr_out_reg_7_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: lfsr_out[7]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  lfsr_out_reg_7_/CK (DFFQX1TS)            0.00       0.00 r
+  lfsr_out_reg_7_/Q (DFFQX1TS)             0.63       0.63 r
+  lfsr_out[7] (out)                        0.00       0.63 r
+  data arrival time                                   0.63
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.05      -0.05
+  data required time                                 -0.05
+  -----------------------------------------------------------
+  data required time                                 -0.05
+  data arrival time                                  -0.63
+  -----------------------------------------------------------
+  slack (MET)                                         0.68
+
+
+  Startpoint: lfsr_out_reg_6_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: lfsr_out[6]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  lfsr_out_reg_6_/CK (DFFQX1TS)            0.00       0.00 r
+  lfsr_out_reg_6_/Q (DFFQX1TS)             0.63       0.63 r
+  lfsr_out[6] (out)                        0.00       0.63 r
+  data arrival time                                   0.63
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.05      -0.05
+  data required time                                 -0.05
+  -----------------------------------------------------------
+  data required time                                 -0.05
+  data arrival time                                  -0.63
+  -----------------------------------------------------------
+  slack (MET)                                         0.68
+
+
+  Startpoint: lfsr_out_reg_4_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: lfsr_out[4]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  lfsr_out_reg_4_/CK (DFFQX1TS)            0.00       0.00 r
+  lfsr_out_reg_4_/Q (DFFQX1TS)             0.63       0.63 r
+  lfsr_out[4] (out)                        0.00       0.63 r
+  data arrival time                                   0.63
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.05      -0.05
+  data required time                                 -0.05
+  -----------------------------------------------------------
+  data required time                                 -0.05
+  data arrival time                                  -0.63
+  -----------------------------------------------------------
+  slack (MET)                                         0.68
+
+
+  Startpoint: lfsr_out_reg_3_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: lfsr_out[3]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  lfsr_out_reg_3_/CK (DFFQX1TS)            0.00       0.00 r
+  lfsr_out_reg_3_/Q (DFFQX1TS)             0.63       0.63 r
+  lfsr_out[3] (out)                        0.00       0.63 r
+  data arrival time                                   0.63
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.05      -0.05
+  data required time                                 -0.05
+  -----------------------------------------------------------
+  data required time                                 -0.05
+  data arrival time                                  -0.63
+  -----------------------------------------------------------
+  slack (MET)                                         0.68
+
+
+  Startpoint: lfsr_out_reg_2_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: lfsr_out[2]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  lfsr_out_reg_2_/CK (DFFQX1TS)            0.00       0.00 r
+  lfsr_out_reg_2_/Q (DFFQX1TS)             0.63       0.63 r
+  lfsr_out[2] (out)                        0.00       0.63 r
+  data arrival time                                   0.63
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.05      -0.05
+  data required time                                 -0.05
+  -----------------------------------------------------------
+  data required time                                 -0.05
+  data arrival time                                  -0.63
+  -----------------------------------------------------------
+  slack (MET)                                         0.68
+
+
+  Startpoint: lfsr_out_reg_1_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: lfsr_out[1]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  lfsr_out_reg_1_/CK (DFFQX1TS)            0.00       0.00 r
+  lfsr_out_reg_1_/Q (DFFQX1TS)             0.63       0.63 r
+  lfsr_out[1] (out)                        0.00       0.63 r
+  data arrival time                                   0.63
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.05      -0.05
+  data required time                                 -0.05
+  -----------------------------------------------------------
+  data required time                                 -0.05
+  data arrival time                                  -0.63
+  -----------------------------------------------------------
+  slack (MET)                                         0.68
+
+
+  Startpoint: lfsr_out_reg_15_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: lfsr_out[15]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  lfsr_out_reg_15_/CK (DFFQX1TS)           0.00       0.00 r
+  lfsr_out_reg_15_/Q (DFFQX1TS)            0.64       0.64 r
+  lfsr_out[15] (out)                       0.00       0.64 r
+  data arrival time                                   0.64
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.05      -0.05
+  data required time                                 -0.05
+  -----------------------------------------------------------
+  data required time                                 -0.05
+  data arrival time                                  -0.64
+  -----------------------------------------------------------
+  slack (MET)                                         0.69
+
+
+  Startpoint: lfsr_out_reg_5_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: lfsr_out[5]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  lfsr_out_reg_5_/CK (DFFQX1TS)            0.00       0.00 r
+  lfsr_out_reg_5_/Q (DFFQX1TS)             0.65       0.65 r
+  lfsr_out[5] (out)                        0.00       0.65 r
+  data arrival time                                   0.65
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.05      -0.05
+  data required time                                 -0.05
+  -----------------------------------------------------------
+  data required time                                 -0.05
+  data arrival time                                  -0.65
+  -----------------------------------------------------------
+  slack (MET)                                         0.70
+
+
+  Startpoint: lfsr_out_reg_12_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: lfsr_out[12]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  lfsr_out_reg_12_/CK (DFFQX1TS)           0.00       0.00 r
+  lfsr_out_reg_12_/Q (DFFQX1TS)            0.65       0.65 r
+  lfsr_out[12] (out)                       0.00       0.65 r
+  data arrival time                                   0.65
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.05      -0.05
+  data required time                                 -0.05
+  -----------------------------------------------------------
+  data required time                                 -0.05
+  data arrival time                                  -0.65
+  -----------------------------------------------------------
+  slack (MET)                                         0.70
+
+
+1

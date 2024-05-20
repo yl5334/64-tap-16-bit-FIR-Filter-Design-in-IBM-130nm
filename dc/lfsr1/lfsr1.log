@@ -1,0 +1,455 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+              Version O-2018.06-SP5-1 for linux64 - Mar 08, 2019 
+
+                    Copyright (c) 1988 - 2019 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+Initializing...
+#########################################
+# TCL script for Design Compiler        #
+# MS 2015                               #
+#########################################
+#########################################
+# READ Design and Library               #
+#########################################
+set top_level lfsr1
+lfsr1
+source -verbose "../common_script/common.tcl"
+. /tools4/syn2007.12/libraries/syn/
+dw_foundation.sldb
+* /courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db dw_foundation.sldb
+/courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db
+/courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db
+read_verilog {../../rtl/$top_level/$top_level.v}
+Loading db file '/courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db'
+Loading db file '/tools/synopsys/syn/O-2018.06-SP5-1/libraries/syn/dw_foundation.sldb'
+Loading db file '/tools/synopsys/syn/O-2018.06-SP5-1/libraries/syn/gtech.db'
+Loading db file '/tools/synopsys/syn/O-2018.06-SP5-1/libraries/syn/standard.sldb'
+  Loading link library 'scx3_cmos8rf_lpvt_tt_1p2v_25c'
+  Loading link library 'gtech'
+Loading verilog file '/homes/user/stud/fall23/yl5334/projects_4823/4823-Fall2023/rtl/lfsr1/lfsr1.v'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /homes/user/stud/fall23/yl5334/projects_4823/4823-Fall2023/rtl/lfsr1/lfsr1.v
+Warning:  /homes/user/stud/fall23/yl5334/projects_4823/4823-Fall2023/rtl/lfsr1/lfsr1.v:15: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  /homes/user/stud/fall23/yl5334/projects_4823/4823-Fall2023/rtl/lfsr1/lfsr1.v:18: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+
+Inferred memory devices in process
+	in routine lfsr1 line 13 in file
+		'/homes/user/stud/fall23/yl5334/projects_4823/4823-Fall2023/rtl/lfsr1/lfsr1.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    lfsr_out_reg     | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Current design is now '/homes/user/stud/fall23/yl5334/projects_4823/4823-Fall2023/rtl/lfsr1/lfsr1.db:lfsr1'
+Loaded 1 design.
+Current design is 'lfsr1'.
+lfsr1
+set set_fix_multiple_port_nets "true"
+true
+list_designs
+lfsr1 (*)
+1
+if { [check_error -v] == 1 } { exit 1 }
+#########################################
+# Design Constraints                    #
+#########################################
+current_design $top_level
+Current design is 'lfsr1'.
+{lfsr1}
+link
+
+  Linking design 'lfsr1'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  lfsr1                       /homes/user/stud/fall23/yl5334/projects_4823/4823-Fall2023/rtl/lfsr1/lfsr1.db
+  scx3_cmos8rf_lpvt_tt_1p2v_25c (library) /courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db
+  dw_foundation.sldb (library) /tools/synopsys/syn/O-2018.06-SP5-1/libraries/syn/dw_foundation.sldb
+
+1
+check_design
+1
+source -verbose "./timing.tcl"
+2.00
+0
+0.010
+0.05
+0.05
+0.005
+1
+1
+1
+1
+1
+1
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+1
+1
+1
+1
+1
+1
+set_max_capacitance 0.005 [all_inputs]
+1
+set_max_fanout 4 $top_level
+1
+set_max_fanout 4 [all_inputs]
+1
+set_max_area 0 
+1
+set_fix_multiple_port_nets -all -buffer_constants
+1
+#########################################
+# Compile                               #
+#########################################
+check_design
+1
+#uniquify
+current_design $top_level
+Current design is 'lfsr1'.
+{lfsr1}
+link
+
+  Linking design 'lfsr1'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  lfsr1                       /homes/user/stud/fall23/yl5334/projects_4823/4823-Fall2023/rtl/lfsr1/lfsr1.db
+  scx3_cmos8rf_lpvt_tt_1p2v_25c (library)
+                              /courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db
+  dw_foundation.sldb (library)
+                              /tools/synopsys/syn/O-2018.06-SP5-1/libraries/syn/dw_foundation.sldb
+
+1
+compile_ultra
+Information: Performing power optimization. (PWR-850)
+Analyzing: "/courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db"
+Library analysis succeeded.
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | O-2018.06-DWBB_201806.5 |     *     |
+| Licensed DW Building Blocks        | O-2018.06-DWBB_201806.5 |     *     |
+============================================================================
+
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+  Simplifying Design 'lfsr1'
+
+Loaded alib file './alib-52/scx3_cmos8rf_lpvt_tt_1p2v_25c.db.alib'
+  Building model 'DW01_NAND2'
+Information: Ungrouping 0 of 1 hierarchies before Pass 1 (OPT-775)
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'lfsr1'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'HOLDX1TS' in the library 'scx3_cmos8rf_lpvt_tt_1p2v_25c' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+Information: There is no timing violation in design lfsr1. Delay-based auto_ungroup will not be performed. (OPT-780)
+
+  Beginning Constant Register Removal
+  -----------------------------------
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+
+  Beginning Isolate Ports
+  -----------------------
+
+  Beginning Delay Optimization
+  ----------------------------
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:07     591.8      0.05       0.0      25.0                            782.9658      0.00  
+    0:00:07     613.4      0.00       0.0      25.0                            818.4166      0.00  
+    0:00:07     613.4      0.00       0.0      25.0                            818.4166      0.00  
+    0:00:07     609.1      0.00       0.0      25.0                            814.2460      0.00  
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:00:07     609.1      0.00       0.0      25.0                            814.2460      0.00  
+    0:00:08     609.1      0.00       0.0      25.0                            814.2460      0.00  
+    0:00:08     609.1      0.00       0.0      25.0                            814.2460      0.00  
+    0:00:08     609.1      0.00       0.0      25.0                            814.2460      0.00  
+    0:00:08     609.1      0.00       0.0      25.0                            814.2460      0.00  
+    0:00:08     609.1      0.00       0.0      25.0                            814.2460      0.00  
+    0:00:08     609.1      0.00       0.0      25.0                            814.2460      0.00  
+    0:00:08     609.1      0.00       0.0      25.0                            814.2460      0.00  
+    0:00:08     609.1      0.00       0.0      25.0                            814.2460      0.00  
+    0:00:08     609.1      0.00       0.0      25.0                            814.2460      0.00  
+    0:00:08     609.1      0.00       0.0      25.0                            814.2460      0.00  
+    0:00:08     609.1      0.00       0.0      25.0                            814.2460      0.00  
+    0:00:08     609.1      0.00       0.0      25.0                            814.2460      0.00  
+    0:00:08     609.1      0.00       0.0      25.0                            814.2460      0.00  
+    0:00:08     609.1      0.00       0.0      25.0                            814.2460      0.00  
+    0:00:08     609.1      0.00       0.0      25.0                            814.2460      0.00  
+    0:00:08     609.1      0.00       0.0      25.0                            814.2460      0.00  
+    0:00:08     609.1      0.00       0.0      25.0                            814.2460      0.00  
+    0:00:08     609.1      0.00       0.0      25.0                            814.2460      0.00  
+    0:00:08     609.1      0.00       0.0      25.0                            814.2460      0.00  
+
+
+  Beginning Design Rule Fixing  (max_fanout)  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:08     609.1      0.00       0.0      25.0                            814.2460      0.00  
+  Global Optimization (Phase 30)
+  Global Optimization (Phase 31)
+  Global Optimization (Phase 32)
+    0:00:08     662.4      0.00       0.0       0.0                            851.8834      0.00  
+    0:00:08     662.4      0.00       0.0       0.0                            851.8834      0.00  
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:08     662.4      0.00       0.0       0.0                            851.8834      0.00  
+  Global Optimization (Phase 33)
+  Global Optimization (Phase 34)
+  Global Optimization (Phase 35)
+  Global Optimization (Phase 36)
+  Global Optimization (Phase 37)
+  Global Optimization (Phase 38)
+  Global Optimization (Phase 39)
+  Global Optimization (Phase 40)
+  Global Optimization (Phase 41)
+  Global Optimization (Phase 42)
+  Global Optimization (Phase 43)
+  Global Optimization (Phase 44)
+    0:00:08     658.1      0.00       0.0       0.0                            843.4296      0.00  
+    0:00:08     658.1      0.00       0.0       0.0                            843.4296      0.00  
+    0:00:08     658.1      0.00       0.0       0.0                            843.4296      0.00  
+    0:00:08     658.1      0.00       0.0       0.0                            843.4296      0.00  
+    0:00:08     658.1      0.00       0.0       0.0                            843.4296      0.00  
+    0:00:08     658.1      0.00       0.0       0.0                            843.4296      0.00  
+    0:00:08     658.1      0.00       0.0       0.0                            843.4296      0.00  
+    0:00:08     658.1      0.00       0.0       0.0                            843.4296      0.00  
+    0:00:08     658.1      0.00       0.0       0.0                            843.4296      0.00  
+    0:00:08     658.1      0.00       0.0       0.0                            843.4296      0.00  
+    0:00:08     658.1      0.00       0.0       0.0                            843.4296      0.00  
+    0:00:08     658.1      0.00       0.0       0.0                            843.4296      0.00  
+    0:00:08     658.1      0.00       0.0       0.0                            843.4296      0.00  
+    0:00:08     658.1      0.00       0.0       0.0                            843.4296      0.00  
+    0:00:08     658.1      0.00       0.0       0.0                            843.4296      0.00  
+    0:00:08     658.1      0.00       0.0       0.0                            843.4296      0.00  
+    0:00:08     658.1      0.00       0.0       0.0                            843.4296      0.00  
+    0:00:08     658.1      0.00       0.0       0.0                            843.4296      0.00  
+    0:00:08     658.1      0.00       0.0       0.0                            843.4296      0.00  
+    0:00:08     658.1      0.00       0.0       0.0                            843.4296      0.00  
+    0:00:08     658.1      0.00       0.0       0.0                            843.4296      0.00  
+    0:00:08     658.1      0.00       0.0       0.0                            843.4296      0.00  
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:08     658.1      0.00       0.0       0.0                            843.4296      0.00  
+    0:00:08     656.6      0.00       0.0       0.0                            848.5524      0.00  
+    0:00:08     656.6      0.00       0.0       0.0                            848.5524      0.00  
+    0:00:08     656.6      0.00       0.0       0.0                            848.5524      0.00  
+    0:00:09     656.6      0.00       0.0       0.0                            848.5524      0.00  
+    0:00:09     655.2      0.00       0.0       0.0                            844.5616      0.00  
+    0:00:09     655.2      0.00       0.0       0.0                            844.5616      0.00  
+    0:00:09     655.2      0.00       0.0       0.0                            844.5616      0.00  
+    0:00:09     655.2      0.00       0.0       0.0                            844.5616      0.00  
+Loading db file '/courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+1
+#########################################
+# Optimize design                       #
+# Some pointers for possible optimizatio# 
+# Check the DC reference manual         #
+#########################################
+#set_transform_for_retiming {temp_reg[6] temp_reg[5] temp_reg[4] temp_reg[3] temp_reg[2] temp_reg[1] temp_reg[0]} dont_retime
+#optimize_registers -clock clk -edge rise -justification_effort high 
+#balance_registers
+#source -verbose "../script/timing.1.2ns.tcl"
+#pipeline_design -stages 8 -clock_port_name $clk_name -check_design -verbose -print_critical_loop
+#set_max_capacitance 1 [all_inputs] 
+#compile_ultra -no_autoungroup -no_boundary_optimization
+#remove_clock -all
+#pipeline_design -stages 8 -clock_port_name $clk_name -async_reset reset -check_design -verbose -minimum_period_only
+#########################################
+# Write outputs                         #
+#########################################
+source -verbose "../common_script/namingrules.tcl"
+1
+
+Design          Type    Object                  New Name
+--------------------------------------------------------------------------------
+lfsr1           cell    lfsr_out_reg[1]         lfsr_out_reg_1_
+lfsr1           cell    lfsr_out_reg[2]         lfsr_out_reg_2_
+lfsr1           cell    lfsr_out_reg[3]         lfsr_out_reg_3_
+lfsr1           cell    lfsr_out_reg[4]         lfsr_out_reg_4_
+lfsr1           cell    lfsr_out_reg[6]         lfsr_out_reg_6_
+lfsr1           cell    lfsr_out_reg[7]         lfsr_out_reg_7_
+lfsr1           cell    lfsr_out_reg[8]         lfsr_out_reg_8_
+lfsr1           cell    lfsr_out_reg[9]         lfsr_out_reg_9_
+lfsr1           cell    lfsr_out_reg[10]        lfsr_out_reg_10_
+lfsr1           cell    lfsr_out_reg[11]        lfsr_out_reg_11_
+lfsr1           cell    lfsr_out_reg[13]        lfsr_out_reg_13_
+lfsr1           cell    lfsr_out_reg[14]        lfsr_out_reg_14_
+lfsr1           cell    lfsr_out_reg[15]        lfsr_out_reg_15_
+lfsr1           cell    lfsr_out_reg[12]        lfsr_out_reg_12_
+lfsr1           cell    lfsr_out_reg[0]         lfsr_out_reg_0_
+lfsr1           cell    lfsr_out_reg[5]         lfsr_out_reg_5_
+lfsr1           net     n5                      n50
+lfsr1           net     n6                      n60
+lfsr1           net     n7                      n70
+lfsr1           net     n8                      n80
+lfsr1           net     n9                      n90
+lfsr1           net     n10                     n100
+lfsr1           net     n11                     n110
+lfsr1           net     n12                     n120
+lfsr1           net     n13                     n130
+lfsr1           net     n14                     n140
+lfsr1           net     n15                     n150
+lfsr1           net     n16                     n160
+lfsr1           net     n17                     n170
+lfsr1           net     n18                     n180
+1
+1
+set verilogout_no_tri TRUE
+TRUE
+write -hierarchy -format verilog -output "${top_level}.nl.v"
+Writing verilog file '/homes/user/stud/fall23/yl5334/projects_4823/4823-Fall2023/dc/lfsr1/lfsr1.nl.v'.
+1
+#write_sdf -context verilog "${top_level}.temp.sdf"
+write_sdc "${top_level}.syn.sdc" -version 1.7
+1
+write_sdf "${top_level}.syn.sdf"
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/homes/user/stud/fall23/yl5334/projects_4823/4823-Fall2023/dc/lfsr1/lfsr1.syn.sdf'. (WT-3)
+Information: Updating design information... (UID-85)
+1
+# Generate report file
+set maxpaths 20
+20
+set rpt_file "${top_level}.dc.rpt"
+lfsr1.dc.rpt
+check_design > $rpt_file
+report_area  >> ${rpt_file}
+report_power -hier -analysis_effort medium >> ${rpt_file}
+report_design >> ${rpt_file}
+report_cell >> ${rpt_file}
+report_port -verbose >> ${rpt_file}
+report_compile_options >> ${rpt_file}
+report_constraint -all_violators -verbose >> ${rpt_file}
+report_timing -path full -delay max -max_paths $maxpaths -nworst 100 >> ${rpt_file}
+report_timing -delay max -nworst 1 -max_paths 10000 -path end -nosplit -unique -sort_by slack > ${top_level}.syn.critical_regs
+report_timing -delay max -nworst 1 -max_paths 10000 -path full -nosplit -unique -sort_by slack > ${top_level}.syn.critical_regs.full
+report_timing -delay max -nworst 1 -max_paths 10000 -path end -nosplit -unique -sort_by slack -to [all_outputs] > ${top_level}.syn.critical_regs.output
+report_timing -delay max -nworst 1 -max_paths 10000 -path end -nosplit -unique -sort_by slack -to [all_registers -data_pins] > ${top_level}.syn.critical_regs.regs
+report_timing -delay min -nworst 1 -max_paths 10000 -path short -nosplit -unique -sort_by slack > ${top_level}.syn.fast_path
+quit
+
+Thank you...
